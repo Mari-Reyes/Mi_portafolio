@@ -1,0 +1,325 @@
+
+/* ESTILOS GENERALES Y MOBILE FIRST (R2, R6, R7)     */
+
+:root {
+    --color-fondo: #f8fafc;
+    --color-principal: #2D1B4E; 
+    --color-secundario: #6C5CE7; 
+    --color-claro: #f1f0fb;
+    --color-texto: #1e293b;
+    --color-texto-suave: #64748b;
+    --color-tarjeta: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+.grid-contenedor {
+    max-width: 1200px;
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* COMPONENTES BASE (MÓVIL / 1 COLUMNA)             */
+
+.cabecera {
+    background-color: var(--color-principal);
+    color: #ffffff;
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-secundario);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.info-header h1 {
+    font-size: 1.5rem;
+}
+
+.info-header p {
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+.texto-header-derecha {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 0.75rem;
+}
+
+/* R8 & R9: Menú de navegación con rutas relativas */
+.menu {
+    background-color: var(--color-tarjeta);
+    padding: 1.25rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.menu a:hover, .menu a.activo {
+    background-color: var(--color-claro);
+    color: var(--color-secundario);
+}
+
+.menu-descripcion small {
+    color: var(--color-secundario);
+    font-weight: bold;
+}
+
+.menu-descripcion p {
+    font-size: 0.85rem;
+    color: var(--color-texto-suave);
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Tarjetas y secciones */
+.tarjeta-seccion, .tarjeta-correo, .tarjeta-redes, .seccion-aviso-privacidad, .tarjeta-contacto, .seccion-intro, .seccion-intro-contacto {
+    background-color: var(--color-tarjeta);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.tarjeta-seccion h2, .seccion-habilidades h2, .seccion-proyectos h2, .seccion-intro h2, .tarjeta-contacto h2, .seccion-intro-contacto h2, .tarjeta-correo h3, .tarjeta-redes h3 {
+    color: var(--color-principal);
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.badge-destacado, .periodo {
+    display: inline-block;
+    background-color: var(--color-claro);
+    color: var(--color-secundario);
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.grid-habilidades, .grid-tarjetas-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card-habilidad, .card-proyecto-detalle {
+    background-color: var(--color-fondo);
+    border: 1px solid #e2e8f0;
+    padding: 1.25rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.icono-habilidad {
+    background-color: var(--color-claro);
+    color: var(--color-secundario);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.tags-tecnologias, .tags-proyecto {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: var(--color-claro);
+    color: var(--color-secundario);
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* R10: Enlaces externos */
+.btn-contacto, .btn-github, .btn-correo {
+    display: inline-block;
+    background-color: var(--color-secundario);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+    transition: background 0.2s;
+}
+
+.btn-contacto:hover, .btn-github:hover, .btn-correo:hover {
+    background-color: var(--color-principal);
+}
+
+.ruta-ejemplo, .nota-privacidad {
+    font-size: 0.8rem;
+    color: var(--color-texto-suave);
+}
+
+.pie {
+    background-color: var(--color-tarjeta);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.enlaces-footer {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.enlaces-footer a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.enlaces-footer a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    color: var(--color-texto-suave);
+    font-size: 0.85rem;
+}
+
+
+
+/* MEDIA QUERY 1: BREAKPOINT DESDE 600px (R3)        */
+
+
+@media (min-width: 600px) {
+    .cabecera {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+/* MEDIA QUERY 2: BREAKPOINT DESDE 1024px (R3, R4)   */
+
+@media (min-width: 1024px) {
+    /* R4: Estructura Grid por áreas en Computador */
+    .grid-contenedor {
+        display: grid;
+        grid-template-areas: 
+            "header header"
+            "nav main"
+            "footer footer";
+        grid-template-columns: 260px 1fr;
+        gap: 2rem;
+    }
+
+    .cabecera {
+        grid-area: header;
+    }
+
+    .menu {
+        grid-area: nav;
+        align-self: start;
+        position: sticky;
+        top: 1.5rem;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .principal {
+        grid-area: main;
+        display: grid;
+        grid-template-areas: 
+            "perfil formacion"
+            "habilidades habilidades"
+            "proyectos proyectos"
+            "contacto contacto";
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .perfil { grid-area: perfil; }
+    .formacion { grid-area: formacion; }
+    .seccion-habilidades { grid-area: habilidades; }
+    .seccion-proyectos { grid-area: proyectos; }
+    .tarjeta-contacto { grid-area: contacto; }
+
+    /* Para proyectos.html y contacto.html */
+    .seccion-intro { grid-area: perfil; grid-column: span 2; }
+    .seccion-proyectos-grid { grid-area: habilidades; grid-column: span 2; }
+    
+    .seccion-intro-contacto { grid-area: perfil; grid-column: span 2; }
+    .tarjeta-correo { grid-area: formacion; }
+    .tarjeta-redes { grid-area: habilidades; }
+    .seccion-aviso-privacidad { grid-area: proyectos; grid-column: span 2; }
+
+    .pie {
+        grid-area: footer;
+    }
+}
