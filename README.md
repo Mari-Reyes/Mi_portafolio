@@ -12,6 +12,8 @@ Sitio web personal que incluye mi hoja de vida profesional y mi portafolio de pr
 
 ## Mockups
 
+Boceto realizado en Figma, se adjuntan imágenes respectivas
+
 ### Hoja de vida (Inicio)
 
 <img width="241" height="567" alt="Index1" src="https://github.com/user-attachments/assets/0b9c43b5-3b6a-4e5d-841a-74b6352e1b5a" />
@@ -22,17 +24,19 @@ Sitio web personal que incluye mi hoja de vida profesional y mi portafolio de pr
 <img width="600" height="298" alt="indexPC2" src="https://github.com/user-attachments/assets/2eed7d1e-2c35-4c2a-941a-b8614f918217" />
 
 ### Proyectos
-![Inicio en celular parte 1](../Mi_portafolio/mockups/proyectos1.png)
-![Inicio en celular parte 2](../Mi_portafolio/mockups/proyectos2.png)
-![Inicio en celular parte 3](../Mi_portafolio/mockups/proyectos3.png)
 
-![Proyectos en computador](../Mi_portafolio/mockups/proyectosPC.png)
+<img width="314" height="556" alt="proyectos1" src="https://github.com/user-attachments/assets/898292ba-8803-49bb-942c-2bc6bf9e20eb" />
+<img width="302" height="558" alt="proyectos2" src="https://github.com/user-attachments/assets/8ca9c1a2-1627-4c4a-be51-76d605b7f469" />
+<img width="318" height="452" alt="proyectos3" src="https://github.com/user-attachments/assets/596b6739-e654-4a14-8325-8e7db93fe1f0" />
+
+<img width="592" height="571" alt="proyectosPC" src="https://github.com/user-attachments/assets/b93a8095-8d49-4d4c-9a06-4f4311b3f80a" />
 
 ### Contacto
-![Inicio en celular parte 1](../Mi_portafolio/mockups/contacto1.png)
-![Inicio en celular parte 2](../Mi_portafolio/mockups/contacto2.png)
 
-![Contacto en computador](../Mi_portafolio/mockups/proyectosPC.png)
+<img width="304" height="570" alt="contacto1" src="https://github.com/user-attachments/assets/99dd170e-89d2-4f08-aa94-fc4a47818038" />
+<img width="301" height="562" alt="contacto2" src="https://github.com/user-attachments/assets/d9a36064-2422-4db7-829a-7d67db78ffde" />
+
+<img width="605" height="568" alt="contactoPC" src="https://github.com/user-attachments/assets/11e45096-69e6-49ae-907f-b676b2cd9330" />
 
 ## Capturas del sitio publicado
 
