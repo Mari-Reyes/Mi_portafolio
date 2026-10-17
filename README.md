@@ -13,23 +13,23 @@ Sitio web personal que incluye mi hoja de vida profesional y mi portafolio de pr
 ## Mockups
 
 ### Hoja de vida (Inicio)
-![Inicio en celular parte 1](../Mi_portafolio/mockups/Index.1.png)
-![Inicio en celular parte 2](../Mi_portafolio/mockups/index.2.png)
-![Inicio en celular parte 3](../Mi_portafolio/mockups/index.3.png)
+![Inicio en celular parte 1](../Mi_portafolio/mockups/Index1.png)
+![Inicio en celular parte 2](../Mi_portafolio/mockups/index2.png)
+![Inicio en celular parte 3](../Mi_portafolio/mockups/index3.png)
 
-![Inicio en computador parte 1](../Mi_portafolio/mockups/indexPC.1.png)
-![Inicio en computador parte 2](../Mi_portafolio/mockups/indexPC.2.png)
+![Inicio en computador parte 1](../Mi_portafolio/mockups/indexPC1.png)
+![Inicio en computador parte 2](../Mi_portafolio/mockups/indexPC2.png)
 
 ### Proyectos
-![Inicio en celular parte 1](../Mi_portafolio/mockups/proyectos.1.png)
-![Inicio en celular parte 2](../Mi_portafolio/mockups/proyectos.2.png)
-![Inicio en celular parte 3](../Mi_portafolio/mockups/proyectos.3.png)
+![Inicio en celular parte 1](../Mi_portafolio/mockups/proyectos1.png)
+![Inicio en celular parte 2](../Mi_portafolio/mockups/proyectos2.png)
+![Inicio en celular parte 3](../Mi_portafolio/mockups/proyectos3.png)
 
 ![Proyectos en computador](../Mi_portafolio/mockups/proyectosPC.png)
 
 ### Contacto
-![Inicio en celular parte 1](../Mi_portafolio/mockups/contacto.1.png)
-![Inicio en celular parte 2](../Mi_portafolio/mockups/contacto.2.png)
+![Inicio en celular parte 1](../Mi_portafolio/mockups/contacto1.png)
+![Inicio en celular parte 2](../Mi_portafolio/mockups/contacto2.png)
 
 ![Contacto en computador](../Mi_portafolio/mockups/proyectosPC.png)
 
