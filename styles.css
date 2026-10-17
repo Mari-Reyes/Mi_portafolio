@@ -1,0 +1,416 @@
+/*ESTILOS GENERALES Y MOBILE FIRST*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+
+    --color-fondo: #12081F;
+    --color-principal: #2D1B4E;
+    --color-secundario: #6C5CE7;
+    --color-claro: #f1f0fb;
+    --color-texto: #1e293b;
+    --color-texto-suave: #64748b;
+    --color-tarjeta: #ffffff;
+    --color-superficie: #f8fafc; 
+
+    --texto-claro: #ffffff;
+    --borde-texto:
+        -1px -1px 0 rgba(0, 0, 0, 0.85),
+         1px -1px 0 rgba(0, 0, 0, 0.85),
+        -1px  1px 0 rgba(0, 0, 0, 0.85),
+         1px  1px 0 rgba(0, 0, 0, 0.85),
+         0 0 4px rgba(0, 0, 0, 0.6);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Google Sans', 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.grid-contenedor {
+    max-width: 1200px;
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* CABECERA (fondo oscuro -> texto blanco con borde negro)*/
+
+.cabecera {
+    background-color: var(--color-principal);
+    color: var(--texto-claro);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-shadow: var(--borde-texto);
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-secundario);
+    color: var(--texto-claro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 50%;
+    text-shadow: var(--borde-texto);
+}
+
+.info-header h1 {
+    font-size: 1.5rem;
+}
+
+.info-header p {
+    font-size: 0.95rem;
+    opacity: 1;
+}
+
+.texto-header-derecha {
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    padding-top: 0.75rem;
+}
+
+
+/* MENÚ DE NAVEGACIÓN (con imagen background.png)*/
+
+.menu {
+    /* Velo oscuro muy ligero encima de la imagen para que el texto se lea */
+    background-image:
+        linear-gradient(rgba(10, 4, 24, 0.35), rgba(10, 4, 24, 0.35)),
+        url('../Mi_portafolio/img/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1a0d33;
+    color: var(--texto-claro);
+    padding: 1.25rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    text-shadow: var(--borde-texto);
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--texto-claro);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.2s;
+    text-shadow: var(--borde-texto);
+}
+
+.menu a:hover,
+.menu a.activo {
+    background-color: rgba(255, 255, 255, 0.18);
+    color: var(--texto-claro);
+}
+
+.menu-descripcion small {
+    color: #cfc8ff;
+    font-weight: bold;
+}
+
+.menu-descripcion p {
+    font-size: 0.85rem;
+    color: var(--texto-claro);
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+/* TARJETAS Y SECCIONES (fondo blanco -> texto oscuro)*/
+
+.tarjeta-seccion,
+.tarjeta-correo,
+.tarjeta-redes,
+.seccion-aviso-privacidad,
+.tarjeta-contacto,
+.seccion-intro,
+.seccion-intro-contacto,
+.seccion-habilidades {
+    background-color: var(--color-tarjeta);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.seccion-proyectos-grid {
+    background-color: var(--color-tarjeta);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.tarjeta-seccion h2,
+.seccion-habilidades h2,
+.seccion-proyectos h2,
+.seccion-intro h2,
+.tarjeta-contacto h2,
+.seccion-intro-contacto h2,
+.tarjeta-correo h3,
+.tarjeta-redes h3,
+.seccion-aviso-privacidad h4 {
+    color: var(--color-principal);
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.badge-destacado,
+.periodo {
+    display: inline-block;
+    background-color: var(--color-claro);
+    color: var(--color-secundario);
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.grid-habilidades,
+.grid-tarjetas-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card-habilidad,
+.card-proyecto-detalle {
+    background-color: var(--color-superficie);
+    border: 1px solid #e2e8f0;
+    padding: 1.25rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.icono-habilidad {
+    background-color: var(--color-claro);
+    color: var(--color-secundario);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.tags-tecnologias,
+.tags-proyecto {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: var(--color-claro);
+    color: var(--color-secundario);
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+
+/* BOTONES (con imagen Botones.png)*/
+
+.btn-contacto,
+.btn-github,
+.btn-correo {
+    display: inline-block;
+    background-image: url('../Mi_portafolio/img/footer.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1a0d33;
+    color: var(--texto-claro);
+    text-shadow: var(--borde-texto);
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid rgba(108, 92, 231, 0.6);
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+    transition: filter 0.2s, transform 0.2s;
+}
+
+.btn-contacto:hover,
+.btn-github:hover,
+.btn-correo:hover {
+    filter: brightness(1.25) saturate(1.1);
+    transform: translateY(-1px);
+}
+
+.btn-contacto:focus-visible,
+.btn-github:focus-visible,
+.btn-correo:focus-visible {
+    outline: 3px solid var(--color-secundario);
+    outline-offset: 2px;
+}
+
+.ruta-ejemplo,
+.nota-privacidad {
+    font-size: 0.8rem;
+    color: var(--color-texto-suave);
+}
+
+
+/* FOOTER (con imagen footer.png en todas las páginas)*/
+
+.pie {
+    background-image:
+        linear-gradient(rgba(10, 4, 24, 0.3), rgba(10, 4, 24, 0.3)),
+        url('../Mi_portafolio/img/Botones.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #2D1B4E;
+    color: var(--texto-claro);
+    text-shadow: var(--borde-texto);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.enlaces-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.enlaces-footer a {
+    color: var(--texto-claro);
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: var(--borde-texto);
+}
+
+.enlaces-footer a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    color: var(--texto-claro);
+    font-size: 0.85rem;
+    text-shadow: var(--borde-texto);
+}
+
+
+/* MEDIA QUERY 1: DESDE 600px*/
+
+@media (min-width: 600px) {
+    .cabecera {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+/* MEDIA QUERY 2: DESDE 1024px (Grid por áreas en computador)*/
+
+@media (min-width: 1024px) {
+    .grid-contenedor {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "nav main"
+            "footer footer";
+        grid-template-columns: 260px 1fr;
+        gap: 2rem;
+    }
+
+    .cabecera {
+        grid-area: header;
+    }
+
+    .menu {
+        grid-area: nav;
+        align-self: start;
+        position: sticky;
+        top: 1.5rem;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .principal {
+        grid-area: main;
+        display: grid;
+        grid-template-areas:
+            "perfil formacion"
+            "habilidades habilidades"
+            "proyectos proyectos"
+            "contacto contacto";
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .perfil { grid-area: perfil; }
+    .formacion { grid-area: formacion; }
+    .seccion-habilidades { grid-area: habilidades; }
+    .seccion-proyectos { grid-area: proyectos; }
+    .tarjeta-contacto { grid-area: contacto; }
+
+    /* Para proyectos.html y contacto.html */
+    .seccion-intro { grid-area: perfil; grid-column: span 2; }
+    .seccion-proyectos-grid { grid-area: habilidades; grid-column: span 2; }
+
+    .seccion-intro-contacto { grid-area: perfil; grid-column: span 2; }
+    .tarjeta-correo { grid-area: formacion; }
+    .tarjeta-redes { grid-area: habilidades; }
+    .seccion-aviso-privacidad { grid-area: proyectos; grid-column: span 2; }
+
+    .pie {
+        grid-area: footer;
+    }
+}
