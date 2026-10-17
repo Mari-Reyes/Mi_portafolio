@@ -13,12 +13,13 @@ Sitio web personal que incluye mi hoja de vida profesional y mi portafolio de pr
 ## Mockups
 
 ### Hoja de vida (Inicio)
-![Inicio en celular parte 1](../Mi_portafolio/mockups/Index1.png)
-![Inicio en celular parte 2](../Mi_portafolio/mockups/index2.png)
-![Inicio en celular parte 3](../Mi_portafolio/mockups/index3.png)
 
-![Inicio en computador parte 1](../Mi_portafolio/mockups/indexPC1.png)
-![Inicio en computador parte 2](../Mi_portafolio/mockups/indexPC2.png)
+<img width="241" height="567" alt="Index1" src="https://github.com/user-attachments/assets/0b9c43b5-3b6a-4e5d-841a-74b6352e1b5a" />
+<img width="239" height="529" alt="index2" src="https://github.com/user-attachments/assets/728d77dd-0d72-41e2-bd33-1098f0b4ad71" />
+<img width="246" height="285" alt="index3" src="https://github.com/user-attachments/assets/76940c51-f85c-4b6c-ae87-d9fa4ae3d024" />
+
+<img width="602" height="495" alt="indexPC1" src="https://github.com/user-attachments/assets/844e9f5b-667f-4924-9e16-24dc1eeb299b" />
+<img width="600" height="298" alt="indexPC2" src="https://github.com/user-attachments/assets/2eed7d1e-2c35-4c2a-941a-b8614f918217" />
 
 ### Proyectos
 ![Inicio en celular parte 1](../Mi_portafolio/mockups/proyectos1.png)
