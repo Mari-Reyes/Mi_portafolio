@@ -57,9 +57,6 @@ img {
     display: block;
 }
 
-
-/* CABECERA (fondo oscuro -> texto blanco con borde negro)*/
-
 .cabecera {
     background-color: var(--color-principal);
     color: var(--texto-claro);
@@ -99,11 +96,7 @@ img {
     padding-top: 0.75rem;
 }
 
-
-/* MENÚ DE NAVEGACIÓN (con imagen background.png)*/
-
 .menu {
-    /* Velo oscuro muy ligero encima de la imagen para que el texto se lea */
     background-image:
         linear-gradient(rgba(10, 4, 24, 0.35), rgba(10, 4, 24, 0.35)),
         url('../Mi_portafolio/img/background.png');
@@ -156,9 +149,6 @@ img {
     flex-direction: column;
     gap: 1.5rem;
 }
-
-
-/* TARJETAS Y SECCIONES (fondo blanco -> texto oscuro)*/
 
 .tarjeta-seccion,
 .tarjeta-correo,
@@ -254,9 +244,6 @@ img {
     font-weight: 600;
 }
 
-
-/* BOTONES (con imagen Botones.png)*/
-
 .btn-contacto,
 .btn-github,
 .btn-correo {
@@ -297,9 +284,6 @@ img {
     font-size: 0.8rem;
     color: var(--color-texto-suave);
 }
-
-
-/* FOOTER (con imagen footer.png en todas las páginas)*/
 
 .pie {
     background-image:
@@ -343,9 +327,6 @@ img {
     text-shadow: var(--borde-texto);
 }
 
-
-/* MEDIA QUERY 1: DESDE 600px*/
-
 @media (min-width: 600px) {
     .cabecera {
         flex-direction: row;
@@ -353,9 +334,6 @@ img {
         justify-content: space-between;
     }
 }
-
-
-/* MEDIA QUERY 2: DESDE 1024px (Grid por áreas en computador)*/
 
 @media (min-width: 1024px) {
     .grid-contenedor {
@@ -412,5 +390,234 @@ img {
 
     .pie {
         grid-area: footer;
+    }
+}
+
+
+@keyframes entrada {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.cabecera { animation: entrada 0.7s cubic-bezier(.2, .7, .2, 1) backwards; }
+.menu     { animation: entrada 0.7s cubic-bezier(.2, .7, .2, 1) 0.12s backwards; }
+
+.principal > * {
+    animation: entrada 0.7s cubic-bezier(.2, .7, .2, 1) backwards;
+}
+.principal > *:nth-child(1) { animation-delay: 0.22s; }
+.principal > *:nth-child(2) { animation-delay: 0.32s; }
+.principal > *:nth-child(3) { animation-delay: 0.42s; }
+.principal > *:nth-child(4) { animation-delay: 0.52s; }
+.principal > *:nth-child(5) { animation-delay: 0.62s; }
+
+.pie { animation: entrada 0.7s cubic-bezier(.2, .7, .2, 1) 0.6s backwards; }
+
+@keyframes deriva {
+    from { background-position: center, 0% 50%; }
+    to   { background-position: center, 100% 50%; }
+}
+
+.menu,
+.pie {
+    background-size: 100% 100%, cover;
+    animation-name: entrada, deriva;
+    animation-duration: 0.7s, 28s;
+    animation-timing-function: cubic-bezier(.2, .7, .2, 1), ease-in-out;
+    animation-iteration-count: 1, infinite;
+    animation-direction: normal, alternate;
+    animation-fill-mode: backwards, none;
+}
+.menu { animation-delay: 0.12s, 0s; }
+.pie  { animation-delay: 0.6s, 0s; }
+
+@keyframes aro {
+    0%   { box-shadow: 0 0 0 0 rgba(108, 92, 231, 0.55); }
+    70%  { box-shadow: 0 0 0 12px rgba(108, 92, 231, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(108, 92, 231, 0); }
+}
+
+.avatar { animation: aro 3.2s ease-out infinite; }
+
+.menu a {
+    position: relative;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 0.2rem;
+    height: 2px;
+    background: var(--texto-claro);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.menu a:hover::after,
+.menu a.activo::after {
+    transform: scaleX(1);
+}
+
+
+.card-habilidad,
+.card-proyecto-detalle {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card-habilidad:hover,
+.card-proyecto-detalle:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-secundario);
+    box-shadow: 0 12px 24px rgba(45, 27, 78, 0.18);
+}
+
+.icono-habilidad {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-habilidad:hover .icono-habilidad {
+    transform: scale(1.12) rotate(-4deg);
+    background-color: var(--color-secundario);
+    color: var(--texto-claro);
+}
+
+.tag {
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.card-proyecto-detalle:hover .tag {
+    background-color: var(--color-secundario);
+    color: var(--texto-claro);
+}
+
+.btn-contacto,
+.btn-github,
+.btn-correo {
+    position: relative;
+    overflow: hidden;
+    background-size: 130% auto;
+    background-position: 0% 50%;
+    transition: background-position 0.6s ease, filter 0.25s ease,
+                transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-contacto::after,
+.btn-github::after,
+.btn-correo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -80%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(105deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+    transform: skewX(-20deg);
+    pointer-events: none;
+}
+
+.btn-contacto:hover,
+.btn-github:hover,
+.btn-correo:hover {
+    background-position: 100% 50%;
+    box-shadow: 0 6px 16px rgba(108, 92, 231, 0.45);
+}
+
+.btn-contacto:hover::after,
+.btn-github:hover::after,
+.btn-correo:hover::after {
+    left: 130%;
+    transition: left 0.7s ease;
+}
+
+.btn-contacto:active,
+.btn-github:active,
+.btn-correo:active {
+    transform: translateY(0) scale(0.98);
+}
+
+
+.enlaces-footer a {
+    transition: transform 0.25s ease;
+}
+
+.enlaces-footer a:hover {
+    transform: translateY(-2px);
+}
+
+.tarjeta-seccion,
+.tarjeta-correo,
+.tarjeta-redes,
+.seccion-aviso-privacidad,
+.tarjeta-contacto,
+.seccion-intro,
+.seccion-intro-contacto,
+.seccion-habilidades,
+.seccion-proyectos-grid {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+@media (hover: hover) {
+    .tarjeta-seccion:hover,
+    .tarjeta-correo:hover,
+    .tarjeta-redes:hover,
+    .seccion-aviso-privacidad:hover,
+    .tarjeta-contacto:hover,
+    .seccion-intro:hover,
+    .seccion-intro-contacto:hover,
+    .seccion-habilidades:hover,
+    .seccion-proyectos-grid:hover {
+        transform: scale(1.015);
+        box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+    }
+}
+
+/* Celular: al hacer scroll, cada cuadro crece suavemente al entrar en pantalla */
+@keyframes crecer-scroll {
+    from { transform: scale(0.94); opacity: 0.55; }
+    to   { transform: scale(1);    opacity: 1; }
+}
+
+@media (hover: none) {
+    @supports (animation-timeline: view()) {
+        .principal > .tarjeta-seccion,
+        .principal > .tarjeta-correo,
+        .principal > .tarjeta-redes,
+        .principal > .seccion-aviso-privacidad,
+        .principal > .tarjeta-contacto,
+        .principal > .seccion-intro,
+        .principal > .seccion-intro-contacto,
+        .principal > .seccion-habilidades,
+        .principal > .seccion-proyectos-grid {
+            animation: crecer-scroll linear both;
+            animation-delay: 0s;
+            animation-timeline: view();
+            animation-range: entry 0% entry 70%;
+        }
+    }
+}
+
+
+
+.tarjeta-contacto p {
+    margin-bottom: 0.25rem;
+}
+
+.tarjeta-contacto .btn-contacto {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
     }
 }
