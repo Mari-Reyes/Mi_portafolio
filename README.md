@@ -3,7 +3,8 @@ Portafolio web profesional y hoja de vida responsiva desarrollada con HTML y CSS
 
 Sitio web personal que incluye mi hoja de vida profesional y mi portafolio de proyectos de desarrollo de software.
 
-**Sitio publicado:** https://github.com/Mari-Reyes/Mi_portafolio
+**Sitio publicado:** https://github.com/Mari-Reyes/Mi_portafolio (Repositorio en GitHub)
+                     https://mari-reyes.github.io/Mi_portafolio/ (Link de la pagina web)
 
 ## Páginas del sitio
 * `index.html`: Hoja de vida principal (perfil, formación y habilidades técnicas).
