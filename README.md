@@ -41,13 +41,17 @@ Boceto realizado en Figma, se adjuntan imágenes respectivas
 
 ## Capturas del sitio publicado
 
-![Vista en celular real]
+![Vista en celular real] Visualización hecha en la extensión *Mobile Viewer* en Visual Code.
+
+### Hoja de vida (Inicio)
 
 <img width="434" height="687" alt="1index" src="https://github.com/user-attachments/assets/004cf8ee-caf2-4ad4-966a-dbd19b5286f4" />
 <img width="430" height="656" alt="2index" src="https://github.com/user-attachments/assets/a2b572b7-ed3c-487d-802d-3d7ed02155d3" />
 <img width="432" height="655" alt="3index" src="https://github.com/user-attachments/assets/6608a75e-0b2e-4e05-a4e9-1b594850351e" />
 
 --------------------------------------------------------------------------------------------------------------------------------------------
+
+### Proyectos
 
 <img width="430" height="657" alt="1proyecto" src="https://github.com/user-attachments/assets/d0dbcdf0-67bb-4331-920b-ae3dd8f277e1" />
 <img width="429" height="656" alt="2proyecto" src="https://github.com/user-attachments/assets/41ea55ac-8409-46a5-84ea-04a1950762d1" />
@@ -56,6 +60,8 @@ Boceto realizado en Figma, se adjuntan imágenes respectivas
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
+### Contacto
+
 <img width="431" height="652" alt="1contacto" src="https://github.com/user-attachments/assets/a5dfe178-6528-4fcf-a842-59b01149ef5b" />
 <img width="430" height="661" alt="2contacto" src="https://github.com/user-attachments/assets/1dc12f9e-6001-4bd2-9d69-25891e46ee84" />
 <img width="432" height="658" alt="3contacto" src="https://github.com/user-attachments/assets/a4086319-4a6e-4470-8d79-4198e5c6465f" />
@@ -63,17 +69,23 @@ Boceto realizado en Figma, se adjuntan imágenes respectivas
 
 ![Vista en computador]
 
+### Hoja de vida (Inicio)
+
 <img width="1365" height="714" alt="1indexpc" src="https://github.com/user-attachments/assets/e22dcd5a-78a2-4812-8b3f-f95dbeabfa55" />
 <img width="1365" height="718" alt="2indexpc" src="https://github.com/user-attachments/assets/706c48a7-a5e9-4038-906f-01f7e180f651" />
 <img width="1365" height="724" alt="3indexpc" src="https://github.com/user-attachments/assets/5b21fb53-4544-470f-be0d-6a4541420ca4" />
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
+### Proyectos
+
 <img width="1365" height="721" alt="1proyectospc" src="https://github.com/user-attachments/assets/24747053-0801-4f56-b265-9c0142974a27" />
 <img width="1365" height="720" alt="2proyectospc" src="https://github.com/user-attachments/assets/c3ea9eb3-09b8-4646-bf87-37ebb5c6b319" />
 <img width="1365" height="718" alt="3proyectospc" src="https://github.com/user-attachments/assets/21cc506d-f8ca-493f-b094-9285a2c8757a" />
 
 --------------------------------------------------------------------------------------------------------------------------------------------
+
+### Contacto
 
 <img width="1365" height="714" alt="1contactopc" src="https://github.com/user-attachments/assets/26143d59-7c3a-454a-9646-67c82f803687" />
 <img width="1365" height="721" alt="2contactopc" src="https://github.com/user-attachments/assets/1c0addf4-e0a4-4db5-9a3e-0608f104abc2" />
